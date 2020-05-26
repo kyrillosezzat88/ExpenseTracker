@@ -1,0 +1,26 @@
+.Expenses{
+    width:230px;
+    height: 85px;
+    background: $White;
+    box-shadow: 0 0 5px 0 $Grey;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    .Income , .Expense{
+        padding: 0 20px;
+        h2{
+            font-weight: 500;
+            margin: 5px 0;
+            color:$Green;
+        }
+    }
+    .Expense{
+        border-left: 1px solid #ddd;
+        h2{
+            color:$Red;
+        }
+    }
+}

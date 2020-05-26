@@ -1,0 +1,22 @@
+@import 'Colors';
+@import 'Loader';
+@import 'Total';
+@import 'Expenses';
+@import 'History';
+@import 'Transiction';
+
+
+.App{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    min-height: 100vh;
+    max-height:100%;
+    background: $LightGrey;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

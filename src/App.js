@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './Style/App.css';
+import ExpenseProvder from './ContextApi/ExpenseContext';
+import Total from './Components/Total';
+import Expenses from './Components/Expenses';
+import Transiction from './Components/Transiction';
+import History from './Components/History'
+import Loader from './Components/Loader';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ExpenseProvder>
+        <Loader />
+        <Total/>
+        <Expenses />
+        <History />
+        <Transiction />
+      </ExpenseProvder>
     </div>
   );
 }
